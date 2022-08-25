@@ -13,12 +13,7 @@ public class Sieve
       System.out.println("Compute primes up to which integer?");
       int n = in.nextInt();
       Set<Integer> s = new TreeSet<>();
-      for (int i = 2; i <= n; i++)
-         s.add(i);
-
-      for (int k = 2; k * k <= n; k++)
-         for (int i = 2; i * k <= n; i++)
-            s.remove(i * k);
+     
 
       System.out.println(s);
    }
